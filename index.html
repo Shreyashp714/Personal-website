@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shreyash Pandey — Associate Engineer focused on backend engineering, financial systems, API integrations, and scalable software." />
+  <title>Shreyash Pandey | Backend Engineer</title>
+  <link rel="canonical" href="https://shreyashp714.github.io/Personal-website/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shreyash Pandey | Backend Engineer" />
+  <meta property="og:description" content="Backend engineering, global payments, API integrations, and reliable software systems." />
+  <meta property="og:url" content="https://shreyashp714.github.io/Personal-website/" />
+  <style>
+    :root {
+      --bg: #080b12;
+      --card: rgba(18, 24, 37, 0.78);
+      --text: #f4f7fb;
+      --muted: #9ca9bc;
+      --line: rgba(255,255,255,.09);
+      --accent: #7c9cff;
+      --accent2: #5eead4;
+      --max: 1120px;
+      --radius: 22px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(124,156,255,.13), transparent 32%),
+        radial-gradient(circle at 80% 18%, rgba(94,234,212,.08), transparent 25%),
+        var(--bg);
+      color:var(--text);line-height:1.65;overflow-wrap:anywhere;
+    }
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--accent2);outline-offset:4px}
+    button{font:inherit}
+    .container{width:min(calc(100% - 40px),var(--max));margin:0 auto}
+    .nav-wrap{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba(8,11,18,.74);border-bottom:1px solid var(--line)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:800;letter-spacing:-.03em;font-size:1.08rem}.brand span{color:var(--accent2)}
+    .nav-links{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:.92rem;font-weight:600}
+    .nav-links a:hover{color:var(--text)}
+    .nav-button{padding:10px 15px;border:1px solid var(--line);border-radius:999px;color:var(--text)!important;background:rgba(255,255,255,.035)}
+    .hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:70px;padding:88px 0 76px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--accent2);font-size:.86rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800;margin-bottom:24px}
+    .eyebrow:before{content:"";width:34px;height:1px;background:var(--accent2)}
+    h1{font-size:clamp(3.35rem,7vw,6.8rem);line-height:.93;letter-spacing:-.07em;max-width:900px;margin-bottom:28px}
+    .gradient-text{background:linear-gradient(100deg,#fff 5%,var(--accent) 55%,var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-copy{max-width:720px;font-size:1.08rem;color:var(--muted);margin-bottom:34px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .button{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 18px;border-radius:12px;font-weight:750;font-size:.94rem;border:1px solid var(--line);transition:.2s}
+    .button{min-height:48px}
+    .button-primary{color:#08111b;background:linear-gradient(135deg,var(--accent2),#8de8ff);border-color:transparent}
+    .button-secondary{background:rgba(255,255,255,.04)}
+    .hero-panel{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(160deg,rgba(124,156,255,.10),rgba(255,255,255,.025));box-shadow:0 30px 80px rgba(0,0,0,.25)}
+    .terminal-top{display:flex;gap:7px;margin-bottom:23px}.dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.22)}
+    .code-line{font-family:"SFMono-Regular",Consolas,monospace;font-size:.88rem;color:#cbd5e1;margin:8px 0;word-break:break-word}
+    .code-key{color:var(--accent)}.code-value{color:var(--accent2)}.code-muted{color:#64748b}
+    .stats{margin-top:30px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{padding:16px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px}.stat strong{display:block;font-size:1.35rem;letter-spacing:-.04em}.stat span{color:var(--muted);font-size:.78rem}
+    section{padding:88px 0}.section-head{display:grid;grid-template-columns:.38fr 1fr;gap:60px;margin-bottom:44px}.section-kicker{color:var(--accent2);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;padding-top:8px}
+    h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.08;letter-spacing:-.05em}
+    .about-grid,.project-grid,.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s}
+    .card h3{font-size:1.2rem;margin-bottom:8px;letter-spacing:-.025em}.card p{color:var(--muted)}
+    .timeline{position:relative;margin-left:8px}.timeline:before{content:"";position:absolute;left:7px;top:12px;bottom:18px;width:1px;background:var(--line)}
+    .role{position:relative;padding:0 0 42px 42px}.role:last-child{padding-bottom:0}.role:before{content:"";position:absolute;left:0;top:8px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--accent2);box-shadow:0 0 0 5px rgba(94,234,212,.06)}
+    .role-head{display:flex;justify-content:space-between;gap:18px;align-items:baseline;flex-wrap:wrap;margin-bottom:5px}.role h3{font-size:1.25rem;letter-spacing:-.025em}.role-date,.role-company{color:var(--muted);font-size:.9rem}.role-company{color:var(--accent);font-weight:700;margin-bottom:12px}.role ul{padding-left:18px;color:var(--muted)}.role li{margin:7px 0}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(124,156,255,.08);border:1px solid rgba(124,156,255,.14);color:#cbd8ff;font-size:.76rem;font-weight:700}
+    .project-card{min-height:260px;display:flex;flex-direction:column}.project-number{color:var(--accent2);font-size:.76rem;font-weight:800;letter-spacing:.14em;margin-bottom:22px}.project-card p{flex:1}
+    .skill-card strong{display:block;color:var(--accent2);margin-bottom:11px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}.skill-list{color:var(--text);font-weight:620;line-height:1.9}
+    .cp-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cp-item{padding:26px;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.025)}.cp-item strong{display:block;font-size:1.75rem;letter-spacing:-.05em;margin-bottom:3px}.cp-item span{color:var(--muted);font-size:.88rem}
+    .cp-item .profile-link{display:block;color:var(--accent2);font-weight:700;margin-top:12px}
+    .cp-item:hover,.cp-item:focus-visible{border-color:var(--accent2)}
+    .contact-box{position:relative;overflow:hidden;padding:56px;border:1px solid var(--line);border-radius:30px;background:radial-gradient(circle at 80% 20%,rgba(94,234,212,.12),transparent 35%),linear-gradient(150deg,rgba(124,156,255,.10),rgba(255,255,255,.025))}.contact-box h2{max-width:700px;margin-bottom:16px}.contact-box p{color:var(--muted);max-width:700px;margin-bottom:28px}
+    footer{padding:30px 0 42px;color:#6f7a8a;font-size:.84rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .mobile-menu{display:none;min-height:44px;min-width:72px;background:transparent;border:1px solid var(--line);color:var(--text);padding:8px 14px;border-radius:10px;cursor:pointer}
+    .hero>*,.stats>*,.section-head>*{min-width:0}
+    @media(hover:hover) and (pointer:fine){
+      .button:hover{transform:translateY(-2px)}
+      .card:hover{transform:translateY(-4px);border-color:rgba(124,156,255,.28)}
+    }
+    @media(max-width:900px){
+      .hero{grid-template-columns:minmax(0,1fr);min-height:auto;padding-top:64px;gap:40px}
+      .hero-panel{width:100%;max-width:620px}
+      .section-head{grid-template-columns:minmax(0,1fr);gap:12px}
+      .about-grid,.project-grid,.skills-grid{grid-template-columns:minmax(0,1fr)}
+      .cp-strip{grid-template-columns:minmax(0,1fr)}
+      .mobile-menu{display:block}
+      .nav-links{display:none;position:absolute;top:calc(100% + 8px);left:20px;right:20px;padding:12px;border-radius:16px;background:#0e1420;border:1px solid var(--line);flex-direction:column;align-items:stretch;gap:4px;max-height:calc(100vh - 96px);max-height:calc(100dvh - 96px);overflow-y:auto;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+      .nav-links.show{display:flex}
+      .nav-links a{display:flex;align-items:center;min-height:48px;padding:10px 14px;border-radius:10px}
+    }
+    @media(max-width:600px){
+      html{scroll-padding-top:80px}
+      .container{width:calc(100% - 32px)}
+      nav{min-height:64px;gap:16px}
+      .brand{display:inline-flex;align-items:center;min-height:44px}
+      .nav-links{left:16px;right:16px;max-height:calc(100vh - 88px);max-height:calc(100dvh - 88px)}
+      .hero{padding:40px 0 48px;gap:32px}
+      .eyebrow{font-size:.72rem;letter-spacing:.1em;line-height:1.6;margin-bottom:20px}
+      .eyebrow:before{width:24px;flex-shrink:0}
+      h1{font-size:clamp(2.6rem,11.5vw,4rem);line-height:1.04;letter-spacing:-.055em;margin-bottom:22px}
+      h2{font-size:clamp(1.75rem,7vw,2.4rem);line-height:1.15;letter-spacing:-.035em}
+      .hero-copy{font-size:1rem;margin-bottom:24px}
+      .hero-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+      .hero-panel{padding:20px;border-radius:18px}
+      .code-line{font-size:.8rem}
+      .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+      .stat{padding:12px}
+      .stat strong{font-size:1.1rem;line-height:1.4;margin-bottom:4px}
+      section{padding:48px 0}
+      .section-head{margin-bottom:26px}
+      .card,.cp-item{padding:22px;border-radius:18px}
+      .project-card{min-height:0}
+      .timeline{margin-left:0}
+      .role{padding-left:30px;padding-bottom:32px}
+      .role-head{flex-direction:column;align-items:flex-start;gap:4px}
+      .role h3{font-size:1.15rem}
+      .role li{margin:10px 0}
+      .tag-row{gap:6px}
+      .contact-box{padding:28px 22px;border-radius:22px}
+      .contact-box .section-kicker{margin-bottom:12px}
+      footer{flex-direction:column;gap:6px;padding:24px 0 30px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .button,.card{transition:none;transform:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="container" aria-label="Main navigation">
+      <a href="#top" class="brand">Shreyash<span>.</span></a>
+      <button class="mobile-menu" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+        <a href="Resume.pdf" class="nav-button" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="container">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Associate Engineer · Backend & Financial Systems</div>
+          <h1>Building reliable <span class="gradient-text">backend systems</span> for finance.</h1>
+          <p class="hero-copy">I'm Shreyash Pandey, an Associate Engineer at StoneX working on API integrations, payment workflows, application logic and system reliability for the XPay Global Payments platform. I enjoy building backend systems, debugging complex flows, and solving problems at the intersection of software and finance.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">View my work ↓</a>
+            <a class="button button-secondary" href="Resume.pdf" target="_blank" rel="noopener">View resume</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/shreyashpandey2304/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="terminal-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <div class="code-line"><span class="code-key">const</span> engineer = {</div>
+          <div class="code-line">&nbsp;&nbsp;name: <span class="code-value">"Shreyash Pandey"</span>,</div>
+          <div class="code-line">&nbsp;&nbsp;role: <span class="code-value">"Associate Engineer"</span>,</div>
+          <div class="code-line">&nbsp;&nbsp;domain: <span class="code-value">"Global Payments"</span>,</div>
+          <div class="code-line">&nbsp;&nbsp;focus: [<span class="code-value">"APIs"</span>, <span class="code-value">"Backend"</span>, <span class="code-value">"CI/CD"</span>],</div>
+          <div class="code-line">&nbsp;&nbsp;currentlyBuilding: <span class="code-value">"XPay"</span></div>
+          <div class="code-line">};</div>
+          <div class="code-line code-muted">// build → debug → improve → repeat</div>
+          <div class="stats">
+            <div class="stat"><strong>500+</strong><span>LeetCode problems</span></div>
+            <div class="stat"><strong>3.5h → 1.5h</strong><span>Regression execution</span></div>
+            <div class="stat"><strong>3★</strong><span>CodeChef</span></div>
+            <div class="stat"><strong>Specialist</strong><span>Codeforces</span></div>
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <section id="about"><div class="container">
+      <div class="section-head"><div class="section-kicker">01 / About</div><h2>Engineer first. Problem solver always.</h2></div>
+      <div class="about-grid">
+        <article class="card"><h3>What I work on</h3><p>Backend engineering for financial systems, including API integrations, service-to-service workflows, ACH payment flows, application debugging, and end-to-end transaction processing.</p></article>
+        <article class="card"><h3>Education</h3><p>B.Tech in Computer Engineering from K.J. Somaiya College of Engineering, Mumbai — CGPA 8.26. Class XII: 90.4% · Class X: 93.3%.</p></article>
+      </div>
+    </div></section>
+
+    <section id="experience"><div class="container">
+      <div class="section-head"><div class="section-kicker">02 / Experience</div><h2>Experience across backend engineering, payments and automation.</h2></div>
+      <div class="timeline">
+        <article class="role">
+          <div class="role-head"><h3>Associate Engineer</h3><span class="role-date">Aug 2026 — Present</span></div>
+          <div class="role-company">StoneX Group Inc. · Pune, India</div>
+          <ul>
+            <li>Developed and integrated APIs for end-to-end payment workflows across multiple banking clients, enabling service-to-service communication throughout the transaction lifecycle.</li>
+            <li>Developed and integrated an ACH payment flow for a banking client, supporting end-to-end transaction processing within XPay.</li>
+            <li>Implemented reusable application components and workflow logic for complex banking and payment-processing requirements.</li>
+            <li>Investigated application issues through log analysis, root-cause investigation and cross-service workflow tracing.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">API Integration</span><span class="tag">Payments</span><span class="tag">ACH</span><span class="tag">Backend</span><span class="tag">Agile</span></div>
+        </article>
+
+        <article class="role">
+          <div class="role-head"><h3>Intern</h3><span class="role-date">Jan 2026 — Jul 2026</span></div>
+          <div class="role-company">StoneX Group Inc. · Pune, India</div>
+          <ul>
+            <li>Developed Playwright-based automation across Instruction Matching, Trade Integration, MT103 and MT210 payment workflows.</li>
+            <li>Optimized Azure DevOps CI/CD pipelines using dynamic sharding and automated scheduling, reducing regression execution time from 3.5 hours to 1.5 hours.</li>
+            <li>Expanded regression coverage and collaborated with developers to reproduce defects and validate fixes across critical payment workflows.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">Playwright</span><span class="tag">Azure DevOps</span><span class="tag">CI/CD</span><span class="tag">Global Payments</span></div>
+        </article>
+
+        <article class="role">
+          <div class="role-head"><h3>Software Engineer Intern</h3><span class="role-date">Jun 2025 — Jul 2025</span></div>
+          <div class="role-company">ITFMS Infotech Pvt. Ltd · Pune, India</div>
+          <ul>
+            <li>Developed a backend resume parsing and candidate-matching system using Python, Flask, PostgreSQL, spaCy and SentenceTransformers.</li>
+            <li>Built data-processing pipelines to extract structured candidate information and persist results using SQLAlchemy and PostgreSQL.</li>
+            <li>Implemented semantic candidate-job matching using embeddings, fuzzy matching and LLM-assisted scoring.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">NLP</span></div>
+        </article>
+      </div>
+    </div></section>
+
+    <section id="projects"><div class="container">
+      <div class="section-head"><div class="section-kicker">03 / Projects</div><h2>Projects where software meets real-world decision making.</h2></div>
+      <div class="project-grid">
+        <article class="card project-card"><div class="project-number">PROJECT 01</div><h3>Trade Harbour</h3><p>Financial application with stock-price prediction, Black–Scholes options pricing, long-term SIP return calculations, authentication and persistent backend data services.</p><div class="tag-row"><span class="tag">Python</span><span class="tag">React</span><span class="tag">Firebase</span><span class="tag">Machine Learning</span></div></article>
+        <article class="card project-card"><div class="project-number">PROJECT 02</div><h3>MERN Blog</h3><p>Full-stack blogging platform with REST-based backend functionality for CRUD operations, authentication, comments, image management and persistent MongoDB storage.</p><div class="tag-row"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MongoDB</span><span class="tag">React</span></div></article>
+      </div>
+    </div></section>
+
+    <section id="skills"><div class="container">
+      <div class="section-head"><div class="section-kicker">04 / Skills</div><h2>Tools I use to build, integrate and troubleshoot systems.</h2></div>
+      <div class="skills-grid">
+        <article class="card skill-card"><strong>Languages</strong><div class="skill-list">Java · C/C++ · Python · JavaScript · SQL</div></article>
+        <article class="card skill-card"><strong>Backend & Frameworks</strong><div class="skill-list">Spring Boot · Flask · Node.js · Express.js · REST APIs · SQLAlchemy</div></article>
+        <article class="card skill-card"><strong>Data & Infrastructure</strong><div class="skill-list">PostgreSQL · MongoDB · Firebase · Azure DevOps · GCP · Git</div></article>
+        <article class="card skill-card"><strong>Engineering</strong><div class="skill-list">DSA · OOP · DBMS · API Integration · CI/CD · Debugging · Playwright · Karate</div></article>
+      </div>
+    </div></section>
+
+    <section id="competitive-programming"><div class="container">
+      <div class="section-head"><div class="section-kicker">05 / Problem Solving</div><h2>Competitive programming keeps the fundamentals sharp.</h2></div>
+      <div class="cp-strip">
+        <a class="cp-item" href="https://leetcode.com/u/shreyashp714/" target="_blank" rel="noopener"><strong>500+</strong><span>LeetCode problems solved</span><span class="profile-link">View LeetCode profile ↗</span></a>
+        <a class="cp-item" href="https://www.codechef.com/users/shreyashp7" target="_blank" rel="noopener"><strong>1634</strong><span>CodeChef max rating · 3★</span><span class="profile-link">View CodeChef profile ↗</span></a>
+        <a class="cp-item" href="https://codeforces.com/profile/shreyashp714" target="_blank" rel="noopener"><strong>1452</strong><span>Codeforces max rating · Specialist</span><span class="profile-link">View Codeforces profile ↗</span></a>
+      </div>
+    </div></section>
+
+    <section id="contact"><div class="container">
+      <div class="contact-box">
+        <div class="section-kicker">06 / Contact</div>
+        <h2>Interested in backend engineering, financial systems and hard technical problems.</h2>
+        <p>I'm always open to connecting with engineers and teams working on scalable backend platforms, financial technology and software infrastructure.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:shreyashp714@gmail.com">Email me</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/shreyashpandey2304/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="button button-secondary" href="https://leetcode.com/u/shreyashp714/" target="_blank" rel="noopener">LeetCode ↗</a>
+        </div>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="container"><span>© 2026 Shreyash Pandey</span><span>Built for the web, backed by curiosity.</span></footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const navLinks = document.getElementById('navLinks');
+    const mobileViewport = window.matchMedia('(max-width: 900px)');
+
+    function setMenuOpen(open) {
+      navLinks.classList.toggle('show', open);
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.textContent = open ? 'Close' : 'Menu';
+    }
+
+    menuButton.addEventListener('click', () => {
+      setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true');
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      setMenuOpen(false);
+      if (mobileViewport.matches) menuButton.focus({ preventScroll: true });
+    }));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+        setMenuOpen(false);
+        menuButton.focus({ preventScroll: true });
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.nav-wrap')) setMenuOpen(false);
+    });
+    document.addEventListener('focusin', event => {
+      if (!event.target.closest('.nav-wrap')) setMenuOpen(false);
+    });
+    mobileViewport.addEventListener('change', () => setMenuOpen(false));
+  </script>
+</body>
+</html>
